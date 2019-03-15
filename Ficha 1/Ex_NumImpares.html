@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex Números Impares</title>
+</head>
+
+<body>
+
+    <script>
+        let num1 = +prompt("1º Número: ")
+        let num2 = +prompt("2º Número: ")
+        let num3;
+        /* OU
+        num1 = Number (num1)
+        num2 = Number (num2)
+        */
+        if (num1 > num2) {
+            num3 = num2
+            num2 = num1
+            num1 = num3
+        }
+
+        for (let i = num1; i <= num2; i++) {
+            if (i % 2 != 0) {
+                alert(i)
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
